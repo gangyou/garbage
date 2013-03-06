@@ -13,9 +13,7 @@ public class GreenhouseController {
 				gc.new ThermostatDay(1400)
 		};
 		gc.addEvent(gc.new Restart(2000, eventList));
-		if(args.length == 1){
-			gc.addEvent(new GreenhouseControls.Terminal(new Integer(args[0])));
-		}
+			gc.addEvent(new GreenhouseControls.Terminal(6000));
 		gc.run();
 	}
 }
